@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="game.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Coding Quiz</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="flex-column flex-center">
-            <div class="quest-div">
-                <h1>Question</h1>
+    <div>
+        <div class="flex-column flex-center start-container">
+            <div>
+                <img src="assets/html256x256.png" alt="html clipart">
+                <img src="assets/256x256.png" alt="css clipart">
+                <img src="assets/js256x256.png" alt="js clipart">
             </div>
-            <div class="mult-choice">
-                <p class="abcd">A)</p>
-                <p>Choice 1</p>
-            </div>
-            <div class="mult-choice">
-                <p class="abcd">B)</p>
-                <p>Choice 2</p>
-            </div>
-            <div class="mult-choice">
-                <p class="abcd">C)</p>
-                <p>Choice 3</p>
-            </div>
-            <div class="mult-choice">
-                <p class="abcd">D)</p>
-                <p>Choice 4</p>
-            </div>
-         
+
+            <h1>Coding Quiz</h1>
+            <a id="start-btn">
+                <h2>Start</h2>
+            </a>
+            <a href="#" id="high-scores-btn">
+                <h2>High Scores</h2>
+            </a>
+
         </div>
-    </div>
+        <div class="container hide">
+            <div class="flex-column flex-center">
+                <div>
+                    <h1 id="multq">What is the Answer to this Question?</h1>
+                </div>
+                <div><button class="mult-choice" id="choiceA">
+                        <p class="abcd">A)</p>
+                        <p id="A">Choice 1</p>
+                    </button>
+                </div>
+                <div><button class="mult-choice" id="choiceB">
+                        <p class="abcd">B)</p>
+                        <p id="B">Choice 2</p>
+                    </button>
+                </div>
+                <div><button class="mult-choice" id="choiceC">
+                        <p class="abcd">C)</p>
+                        <p id="C">Choice 3</p>
+                    </button>
+                </div>
+                <div><button class="mult-choice" id="choiceD">
+                        <p class="abcd">D)</p>
+                        <p id="D">Choice 4</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <script src='script.js'></script>
 </body>
+
 </html>
